@@ -10,9 +10,10 @@ package com.github.maxinertia.space
   *   4D: ...
   *   ...
   *
-  * Created by Dorian Thiessen on 2018-04-21.
+  * Created on 2018-04-21.
   */
 trait Space[D <: Direction, L <: Location] {
+
   /**
     * Returns a list of tuples where each tuple corresponds to a
     * unique location adjacent to the provided location.
@@ -29,7 +30,7 @@ trait Space[D <: Direction, L <: Location] {
 
   /**
     * Returns the location adjacent to the specified location
-    * in the specified direction if it exists. Otherwise None.
+    * in the specified direction if it exists, otherwise None.
     *
     * @param location A location
     * @param direction A direction
