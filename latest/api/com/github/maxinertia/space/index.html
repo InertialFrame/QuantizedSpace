@@ -132,7 +132,10 @@
         <span class="name">space</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.github.maxinertia">maxinertia</a></dd></dl></div>
+      <p class="shortcomment cmt">A set of three traits used to describe quantized spaces: Spaces that can be described with a
+<b>set of locations</b> (to give the space...</p><div class="fullcomment"><div class="comment cmt"><p>A set of three traits used to describe quantized spaces: Spaces that can be described with a
+<b>set of locations</b> (to give the space... space!) and a <b>set of directions</b> (to traverse the space).</p><p>1. <a href="Space.html" class="extype" name="com.github.maxinertia.space.Space">Space</a></p><ul><li>Contains any operations that can be applied to arbitrary spaces.</li><li>Implementing Space requires an implementation of Location and Direction.</li></ul><p>2. <a href="Location.html" class="extype" name="com.github.maxinertia.space.Location">Location</a></p><ul><li>An atom of space.</li><li>A container for whatever you want in your space!</li></ul><p>3. <a href="Direction.html" class="extype" name="com.github.maxinertia.space.Direction">Direction</a></p><ul><li>A direction in which adjacent locations to some reference location <i>may</i> be found.
+</li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="com.github.maxinertia">maxinertia</a></dd></dl></div>
     </li><li class="current-entities indented4">
                         <span class="separator"></span>
                         <a class="trait" href="Direction.html" title="A direction in space."></a>
@@ -173,7 +176,14 @@
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"></div>
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A set of three traits used to describe quantized spaces: Spaces that can be described with a
+<b>set of locations</b> (to give the space... space!) and a <b>set of directions</b> (to traverse the space).</p><p>1. <a href="Space.html" class="extype" name="com.github.maxinertia.space.Space">Space</a></p><ul><li>Contains any operations that can be applied to arbitrary spaces.</li><li>Implementing Space requires an implementation of Location and Direction.</li></ul><p>2. <a href="Location.html" class="extype" name="com.github.maxinertia.space.Location">Location</a></p><ul><li>An atom of space.</li><li>A container for whatever you want in your space!</li></ul><p>3. <a href="Direction.html" class="extype" name="com.github.maxinertia.space.Direction">Direction</a></p><ul><li>A direction in which adjacent locations to some reference location <i>may</i> be found.
+</li></ul></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
         
 
       
@@ -199,9 +209,9 @@
         <a title="A direction in space." href="Direction.html"><span class="name">Direction</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
-      <p class="shortcomment cmt">A direction in space.</p><div class="fullcomment"><div class="comment cmt"><p>A direction in space.</p><p>Created on 2018-04-21.
+      <p class="shortcomment cmt">A direction in space.</p><div class="fullcomment"><div class="comment cmt"><p>A direction in space.</p><p>1D Examples (Pairs of directions):</p><ul><li><b>Forward</b> and <b>Backward</b></li><li><b>Left</b> and <b>Right</b></li><li><b>Up</b> and <b>Down</b></li><li><b>CW</b> and <b>CCW</b></li><li><b>In</b> and <b>Out</b></li></ul><p>For <i>N</i>D (<i>N</i> dimensions) use some combination of <i>N</i> direction pairs.
 </p></div></div>
-    </li><li name="com.github.maxinertia.space.Location" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+    </li><li name="com.github.maxinertia.space.Location" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="LocationextendsAnyRef"></a><a id="Location:Location"></a>
       <span class="permalink">
       <a href="../../../../com/github/maxinertia/space/index.html#LocationextendsAnyRef" title="Permalink">
@@ -216,8 +226,7 @@
         <a title="A discrete unit of space." href="Location.html"><span class="name">Location</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
-      <p class="shortcomment cmt">A discrete unit of space.</p><div class="fullcomment"><div class="comment cmt"><p>A discrete unit of space.</p><p>Created on 2018-04-21.
-</p></div></div>
+      <p class="shortcomment cmt">A discrete unit of space.</p>
     </li><li name="com.github.maxinertia.space.Space" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="Space[D&lt;:com.github.maxinertia.space.Direction,L&lt;:com.github.maxinertia.space.Location]extendsAnyRef"></a><a id="Space[D&lt;:Direction,L&lt;:Location]:Space[D,L]"></a>
       <span class="permalink">
@@ -233,13 +242,8 @@
         <a title="A space of arbitrary dimensionality." href="Space.html"><span class="name">Space</span></a><span class="tparams">[<span name="D">D &lt;: <a href="Direction.html" class="extype" name="com.github.maxinertia.space.Direction">Direction</a></span>, <span name="L">L &lt;: <a href="Location.html" class="extype" name="com.github.maxinertia.space.Location">Location</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
-      <p class="shortcomment cmt">A space of arbitrary dimensionality.</p><div class="fullcomment"><div class="comment cmt"><p>A space of arbitrary dimensionality.</p><p>Examples:
-  1D: Row, Column, List, ...
-  2D: Square grid, hexagonal grid, ...
-  3D: Quantized space (Made up of discrete locations, ie: Not continuous)
-  4D: ...
-  ...</p><p>Created on 2018-04-21.
-</p></div></div>
+      <p class="shortcomment cmt">A space of arbitrary dimensionality.</p><div class="fullcomment"><div class="comment cmt"><p>A space of arbitrary dimensionality.</p><p>Examples:</p><ul><li>1D: Row, Column, List, ...</li><li>2D: Square grid, hexagonal grid, ...</li><li>3D: Quantized space (Made up of discrete locations, ie: Not continuous)
+</li></ul></div></div>
     </li></ol>
             </div>
 
@@ -253,7 +257,11 @@
         </div>
 
         <div id="inheritedMembers">
-        
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
         
         </div>
 
