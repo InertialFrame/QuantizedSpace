@@ -2,12 +2,15 @@ language: scala
 scala: 2.12.5
 jdk: oraclejdk8
 
+before_install:
+  - openssl aes-256-cbc -K $encrypted_99025b2cffb0_key -iv $encrypted_99025b2cffb0_iv -in project/travis-deploy-key.enc -out project/travis-deploy-key -d
+
 before_deploy:
   # Record minimal build information via the Git user ident
   - git config --global user.name "$USER"
   - git config --global user.email "$TRAVIS_BUILD_NUMBER@$TRAVIS_COMMIT"
   # Decrypt the secret deploy key using instructions from `travis encrypt-file`
-  - openssl aes-256-cbc -K $encrypted_99025b2cffb0_key -iv $encrypted_99025b2cffb0_iv -in project/travis-deploy-key.enc -out project/travis-deploy-key -d
+  #- openssl aes-256-cbc -K $encrypted_99025b2cffb0_key -iv $encrypted_99025b2cffb0_iv -in project/travis-deploy-key.enc -out project/travis-deploy-key -d
   - chmod 600 project/travis-deploy-key
   # Start ssh-agent in the background and load the deploy key
   - eval "$(ssh-agent -s)"
