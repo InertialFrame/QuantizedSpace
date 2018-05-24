@@ -5,4 +5,4 @@ organization := "InertialFrame"
 
 enablePlugins(GhpagesPlugin)
 enablePlugins(SiteScaladocPlugin)
-git.remoteRepo := s"git@github.com:MaxInertia/$name.git"
+git.remoteRepo := s"git@github.com:$organization/$name.git"
