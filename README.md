@@ -1,3 +1,3 @@
-# QuantizedSpace
+# Quantized Space
 
-- [Scaladoc](https://maxinertia.github.io/QuantizedSpace/latest/api/com/github/maxinertia/space/index.html)
+- [Scaladoc](https://inertialframe.github.io/QuantizedSpace/latest/api/com/github/maxinertia/space/index.html)
