@@ -1,3 +1,7 @@
+language: scala
+scala: 2.12.5
+jdk: oraclejdk8
+
 before_deploy:
   # Record minimal build information via the Git user ident
   - git config --global user.name "$USER"
