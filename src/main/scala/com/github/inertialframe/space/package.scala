@@ -1,4 +1,4 @@
-package com.github.maxinertia
+package com.github.inertialframe
 
 import space._
 

@@ -1,4 +1,4 @@
-package com.github.maxinertia.space
+package com.github.inertialframe.space
 
 /**
   * A direction in space.
