@@ -18,7 +18,9 @@ before_deploy:
 
 deploy:
   provider: script
-  script: sbt ghpagesPushSite
+  script:
+    - rm -rf ~/.sbt/ghpages/xxxx
+    - sbt ghpagesPushSite
   skip_cleanup: true
   on:
     condition: $TRAVIS_PULL_REQUEST = false # && $SBT_CROSS_VERSION = 0.13*
