@@ -1,8 +1,8 @@
 name := "QuantizedSpace"
 version := "0.1"
 scalaVersion := "2.12.5"
-organization := "InertialFrame"
+organization := "nonInertial"
 
 enablePlugins(GhpagesPlugin)
 enablePlugins(SiteScaladocPlugin)
-git.remoteRepo := s"git@github.com:$organization/$name.git"
+git.remoteRepo := s"git@github.com:InertialFrame/$name.git"
